@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace PassKeeper.Desktop.ViewModels
 {
-    public class PasswordsViewModel : ViewModelBase, IRoutableViewModel
+    public class PasswordsViewModel : ViewModelBaseTab 
     {
-        public IScreen HostScreen { get; }
-        public string UrlPathSegment => "/passwords";
-
         public int Count { get; set; }
         public int DigitsInPass { get; set; }
         public int CharsInPass { get; set; }
@@ -21,9 +18,9 @@ namespace PassKeeper.Desktop.ViewModels
 
 
 
-        public PasswordsViewModel(IScreen? screen = null)
+        public PasswordsViewModel()
         {
-            HostScreen = screen ?? Locator.Current.GetService<IScreen>();
+            Header = "Пароли";
         }
     }
 }

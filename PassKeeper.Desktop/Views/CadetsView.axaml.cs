@@ -7,7 +7,7 @@ using ReactiveUI;
 
 namespace PassKeeper.Desktop.Views
 {
-    public class CadetsView : ReactiveUserControl<CadetsViewModel>
+    public class CadetsView : UserControl
     {
         public CadetsView()
         {
@@ -16,7 +16,6 @@ namespace PassKeeper.Desktop.Views
 
         private void InitializeComponent()
         {
-            this.WhenActivated(disposables => { });
             AvaloniaXamlLoader.Load(this);
         }
     }

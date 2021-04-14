@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31025.218
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.Desktop", "PassKeeper.Desktop\PassKeeper.Desktop.csproj", "{26CBC8E9-A151-4CFD-9DC2-41F005B683C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.PassLib", "PassKeeper.CreatePassLib\PassKeeper.PassLib.csproj", "{97800F9C-C11E-43E3-B3AC-A16353F20F32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.CoreLib", "PassKeeper.CoreLib\PassKeeper.CoreLib.csproj", "{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassKeeper.CoreLib", "PassKeeper.CoreLib\PassKeeper.CoreLib.csproj", "{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassKeeper.PassLib", "PassKeeper.PassLib\PassKeeper.PassLib.csproj", "{C974B279-76EA-458B-985C-B578AE67C583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{26CBC8E9-A151-4CFD-9DC2-41F005B683C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26CBC8E9-A151-4CFD-9DC2-41F005B683C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26CBC8E9-A151-4CFD-9DC2-41F005B683C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97800F9C-C11E-43E3-B3AC-A16353F20F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97800F9C-C11E-43E3-B3AC-A16353F20F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97800F9C-C11E-43E3-B3AC-A16353F20F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97800F9C-C11E-43E3-B3AC-A16353F20F32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F6EA003-A1E6-4E5C-A3EC-338D6EC2BC42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C974B279-76EA-458B-985C-B578AE67C583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C974B279-76EA-458B-985C-B578AE67C583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C974B279-76EA-458B-985C-B578AE67C583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C974B279-76EA-458B-985C-B578AE67C583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

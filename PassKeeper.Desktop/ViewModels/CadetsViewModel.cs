@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace PassKeeper.Desktop.ViewModels
 {
-    public class CadetsViewModel : ViewModelBase, IRoutableViewModel
+    public class CadetsViewModel : ViewModelBaseTab
     {
-        public IScreen HostScreen { get; }
-        public string UrlPathSegment => "/cadets";
+        public string Name { get; set; } = "new name sample";
 
-        public CadetsViewModel(IScreen? screen = null)
+        public CadetsViewModel()
         {
-            HostScreen = screen ?? Locator.Current.GetService<IScreen>();
+            Header = "Кадеты";
         }
 
 

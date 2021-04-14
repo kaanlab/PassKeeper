@@ -17,13 +17,14 @@ namespace PassKeeper.Desktop
 
         public override void OnFrameworkInitializationCompleted()
         {
-            // Here we register our view models.
-            Locator.CurrentMutable.RegisterConstant<IScreen>(new MainWindowViewModel());
-            Locator.CurrentMutable.Register<IViewFor<CadetsViewModel>>(() => new CadetsView());
-            Locator.CurrentMutable.Register<IViewFor<PasswordsViewModel>>(() => new PasswordsView());
+            if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+            {
+                desktop.MainWindow = new MainWindowView
+                {
+                    DataContext = new MainWindowViewModel() 
 
-            // Here we resolve the root view model and initialize main view data context.
-            new MainWindowView { DataContext = Locator.Current.GetService<IScreen>() }.Show();
+                };
+            }
 
             base.OnFrameworkInitializationCompleted();
         }
