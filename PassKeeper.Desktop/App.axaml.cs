@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using PassKeeper.CoreLib.Services;
 using PassKeeper.Desktop.ViewModels;
 using PassKeeper.Desktop.Views;
 using ReactiveUI;
@@ -19,9 +20,10 @@ namespace PassKeeper.Desktop
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
+                var storageService = new StorageService();
                 desktop.MainWindow = new MainWindowView
                 {
-                    DataContext = new MainWindowViewModel() 
+                    DataContext = new MainWindowViewModel(storageService) 
 
                 };
             }

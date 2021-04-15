@@ -4,8 +4,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="PassKeeper.Desktop.Views.CadetsView">
-  
+
   <StackPanel>
-    <TextBox Text="{Binding Name}" />
+    <TextBox Watermark="Поиск по фамилии и имени" Text="{Binding SearchTerm}" />
+    <Button>Найти</Button>
+    <!-- Cadets table -->
+    <DataGrid Margin="5" Items="{Binding SearchResults}" AutoGenerateColumns="False" IsReadOnly="True">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Фамилия"
+                            Binding="{Binding LastName}"/>
+        <DataGridTextColumn Header="Имя"
+                            Binding="{Binding FirstName}" />
+        <DataGridTextColumn Header="Отчество"
+                            Binding="{Binding MiddleName}" />
+        <DataGridTextColumn Header="Логин"
+                            Binding="{Binding Login}" />
+        <DataGridTextColumn Header="Пароль"
+                            Binding="{Binding Password}" />
+        <DataGridTextColumn Header="Парольная фраза"
+                            Binding="{Binding Passphrase}" Width="*"/>
+      </DataGrid.Columns>
+    </DataGrid>
   </StackPanel>
 </UserControl>

@@ -1,5 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.ReactiveUI;
+using PassKeeper.CoreLib.Services;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,9 @@ namespace PassKeeper.Desktop.ViewModels
     {
         public ObservableCollection<ViewModelBaseTab> Tabs { get; } = new();
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(StorageService storageService)
         {
-            Tabs.Add(new CadetsViewModel());
+            Tabs.Add(new CadetsViewModel(storageService.GetCadets()));
             Tabs.Add(new PasswordsViewModel());              
         }
     }
