@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.PassLib", "PassK
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{12B7840C-B4CA-4279-8FB6-62D8143796ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassKeeper.CoreLib.Tests", "PassKeeper.CoreLib.Tests\PassKeeper.CoreLib.Tests.csproj", "{6C69279B-14A7-4D38-90EA-361988A44795}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.CoreLib.Tests", "PassKeeper.CoreLib.Tests\PassKeeper.CoreLib.Tests.csproj", "{6C69279B-14A7-4D38-90EA-361988A44795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassKeeper.PassLib.Tests", "PassKeeper.PassLib.Tests\PassKeeper.PassLib.Tests.csproj", "{E2D82D47-39EB-4ADD-9A0F-DFC454F1E8A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassKeeper.PassLib.Tests", "PassKeeper.PassLib.Tests\PassKeeper.PassLib.Tests.csproj", "{E2D82D47-39EB-4ADD-9A0F-DFC454F1E8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassKeeper.Console", "PassKeeper.Console\PassKeeper.Console.csproj", "{098F3F67-E45D-4224-A08E-4DE6657D9BAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E2D82D47-39EB-4ADD-9A0F-DFC454F1E8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2D82D47-39EB-4ADD-9A0F-DFC454F1E8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2D82D47-39EB-4ADD-9A0F-DFC454F1E8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098F3F67-E45D-4224-A08E-4DE6657D9BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098F3F67-E45D-4224-A08E-4DE6657D9BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098F3F67-E45D-4224-A08E-4DE6657D9BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098F3F67-E45D-4224-A08E-4DE6657D9BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
